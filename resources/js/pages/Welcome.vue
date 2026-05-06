@@ -202,12 +202,16 @@ onBeforeUnmount(() => {
                         and tandoori specialties.
                     </p>
                     <div class="hero-btns">
-                        <Link href="/menu" prefetch class="btn btn-primary"
+                        <Link
+                            href="/menu"
+                            prefetch="click"
+                            class="btn btn-primary"
+                        >
                             >Explore Menu</Link
                         >
                         <Link
                             href="/catering"
-                            prefetch
+                            prefetch="click"
                             class="btn btn-secondary"
                             >Catering &amp; Events</Link
                         >
@@ -297,7 +301,7 @@ onBeforeUnmount(() => {
                     </h2>
                     <Link
                         href="/menu"
-                        prefetch
+                        prefetch="click"
                         class="btn btn-secondary reveal"
                         style="font-size: 14px; padding: 10px 22px"
                         >View Full Menu →</Link
@@ -335,7 +339,7 @@ onBeforeUnmount(() => {
                                 <span class="dprice">$12.99</span>
                                 <Link
                                     href="/menu"
-                                    prefetch
+                                    prefetch="click"
                                     class="btn btn-primary"
                                     style="font-size: 13px; padding: 8px 18px"
                                     >Order</Link
@@ -371,7 +375,7 @@ onBeforeUnmount(() => {
                                 <span class="dprice">$15.99</span>
                                 <Link
                                     href="/menu"
-                                    prefetch
+                                    prefetch="click"
                                     class="btn btn-primary"
                                     style="font-size: 13px; padding: 8px 18px"
                                     >Order</Link
@@ -407,7 +411,7 @@ onBeforeUnmount(() => {
                                 <span class="dprice">$13.99</span>
                                 <Link
                                     href="/menu"
-                                    prefetch
+                                    prefetch="click"
                                     class="btn btn-primary"
                                     style="font-size: 13px; padding: 8px 18px"
                                     >Order</Link
@@ -436,7 +440,7 @@ onBeforeUnmount(() => {
                                 <span class="dprice">$11.99</span>
                                 <Link
                                     href="/menu"
-                                    prefetch
+                                    prefetch="click"
                                     class="btn btn-primary"
                                     style="font-size: 13px; padding: 8px 18px"
                                     >Order</Link
@@ -567,7 +571,7 @@ onBeforeUnmount(() => {
                         >
                             <Link
                                 href="/catering"
-                                prefetch
+                                prefetch="click"
                                 class="btn btn-primary"
                                 style="
                                     background: var(--gold);
@@ -577,7 +581,7 @@ onBeforeUnmount(() => {
                             >
                             <Link
                                 href="/contact"
-                                prefetch
+                                prefetch="click"
                                 class="btn btn-secondary"
                                 style="
                                     background: rgba(255, 255, 255, 0.12);
@@ -594,7 +598,7 @@ onBeforeUnmount(() => {
                         <div class="per">.99 / person</div>
                         <Link
                             href="/catering"
-                            prefetch
+                            prefetch="click"
                             class="btn"
                             style="
                                 background: var(--gold);

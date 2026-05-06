@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Link } from '@inertiajs/vue3';
+import { Link, router } from '@inertiajs/vue3';
 import { nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue';
 import { runMarketingMotion } from '@/lib/marketingMotion';
 import '../../css/aigst.css';
@@ -16,6 +16,11 @@ function toggleDrawer() {
 }
 function closeDrawer() {
     drawerOpen.value = false;
+}
+
+function prepareForVisit() {
+    router.cancelAll();
+    closeDrawer();
 }
 watch(drawerOpen, (open) => {
     document.body.style.overflow = open ? 'hidden' : '';
@@ -103,7 +108,12 @@ onBeforeUnmount(() => {
     <div class="aigst">
         <nav>
             <div class="nav-inner">
-                <Link href="/" prefetch class="nav-logo">
+                <Link
+                    href="/"
+                    prefetch="click"
+                    class="nav-logo"
+                    @click="prepareForVisit"
+                >
                     <span class="logo-top">Indian Grocery</span>
                     <span class="logo-sub">&amp; Takeout · Stratford, ON</span>
                 </Link>
@@ -111,40 +121,45 @@ onBeforeUnmount(() => {
                     <li>
                         <Link
                             href="/"
-                            prefetch
+                            prefetch="click"
                             :class="{ active: active === 'home' }"
+                            @click="prepareForVisit"
                             >Home</Link
                         >
                     </li>
                     <li>
                         <Link
                             href="/menu"
-                            prefetch
+                            prefetch="click"
                             :class="{ active: active === 'menu' }"
+                            @click="prepareForVisit"
                             >Menu</Link
                         >
                     </li>
                     <li>
                         <Link
                             href="/catering"
-                            prefetch
+                            prefetch="click"
                             :class="{ active: active === 'catering' }"
+                            @click="prepareForVisit"
                             >Catering</Link
                         >
                     </li>
                     <li>
                         <Link
                             href="/party-trays"
-                            prefetch
+                            prefetch="click"
                             :class="{ active: active === 'trays' }"
+                            @click="prepareForVisit"
                             >Party Trays</Link
                         >
                     </li>
                     <li>
                         <Link
                             href="/contact"
-                            prefetch
+                            prefetch="click"
                             :class="{ active: active === 'contact' }"
+                            @click="prepareForVisit"
                             >Contact</Link
                         >
                     </li>
@@ -192,45 +207,45 @@ onBeforeUnmount(() => {
                 <li>
                     <Link
                         href="/"
-                        prefetch
+                        prefetch="click"
                         :class="{ active: active === 'home' }"
-                        @click="closeDrawer"
+                        @click="prepareForVisit"
                         ><span>🏠</span> Home</Link
                     >
                 </li>
                 <li>
                     <Link
                         href="/menu"
-                        prefetch
+                        prefetch="click"
                         :class="{ active: active === 'menu' }"
-                        @click="closeDrawer"
+                        @click="prepareForVisit"
                         ><span>📖</span> Menu</Link
                     >
                 </li>
                 <li>
                     <Link
                         href="/catering"
-                        prefetch
+                        prefetch="click"
                         :class="{ active: active === 'catering' }"
-                        @click="closeDrawer"
+                        @click="prepareForVisit"
                         ><span>🎉</span> Catering</Link
                     >
                 </li>
                 <li>
                     <Link
                         href="/party-trays"
-                        prefetch
+                        prefetch="click"
                         :class="{ active: active === 'trays' }"
-                        @click="closeDrawer"
+                        @click="prepareForVisit"
                         ><span>🍱</span> Party Trays</Link
                     >
                 </li>
                 <li>
                     <Link
                         href="/contact"
-                        prefetch
+                        prefetch="click"
                         :class="{ active: active === 'contact' }"
-                        @click="closeDrawer"
+                        @click="prepareForVisit"
                         ><span>📞</span> Contact</Link
                     >
                 </li>
@@ -270,15 +285,46 @@ onBeforeUnmount(() => {
                 <div class="fcol">
                     <h4>Pages</h4>
                     <ul>
-                        <li><Link href="/" prefetch>Home</Link></li>
-                        <li><Link href="/menu" prefetch>Menu</Link></li>
-                        <li><Link href="/catering" prefetch>Catering</Link></li>
                         <li>
-                            <Link href="/party-trays" prefetch
+                            <Link
+                                href="/"
+                                prefetch="click"
+                                @click="prepareForVisit"
+                                >Home</Link
+                            >
+                        </li>
+                        <li>
+                            <Link
+                                href="/menu"
+                                prefetch="click"
+                                @click="prepareForVisit"
+                                >Menu</Link
+                            >
+                        </li>
+                        <li>
+                            <Link
+                                href="/catering"
+                                prefetch="click"
+                                @click="prepareForVisit"
+                                >Catering</Link
+                            >
+                        </li>
+                        <li>
+                            <Link
+                                href="/party-trays"
+                                prefetch="click"
+                                @click="prepareForVisit"
                                 >Party Trays</Link
                             >
                         </li>
-                        <li><Link href="/contact" prefetch>Contact</Link></li>
+                        <li>
+                            <Link
+                                href="/contact"
+                                prefetch="click"
+                                @click="prepareForVisit"
+                                >Contact</Link
+                            >
+                        </li>
                     </ul>
                 </div>
                 <div class="fcol">

@@ -198,7 +198,7 @@ onBeforeUnmount(() => {
                         <div class="pkg-cta">
                             <Link
                                 href="/contact"
-                                prefetch
+                                prefetch="click"
                                 class="btn btn-secondary"
                                 style="
                                     font-size: 14px;
@@ -236,7 +236,7 @@ onBeforeUnmount(() => {
                         <div class="pkg-cta">
                             <Link
                                 href="/contact"
-                                prefetch
+                                prefetch="click"
                                 class="btn btn-secondary"
                                 style="
                                     font-size: 14px;
@@ -276,7 +276,7 @@ onBeforeUnmount(() => {
                         <div class="pkg-cta">
                             <Link
                                 href="/contact"
-                                prefetch
+                                prefetch="click"
                                 class="btn"
                                 style="
                                     font-size: 14px;
@@ -315,7 +315,7 @@ onBeforeUnmount(() => {
                         <div class="pkg-cta">
                             <Link
                                 href="/contact"
-                                prefetch
+                                prefetch="click"
                                 class="btn btn-secondary"
                                 style="
                                     font-size: 14px;
@@ -389,7 +389,7 @@ onBeforeUnmount(() => {
                 <div style="display: flex; flex-direction: column; gap: 12px">
                     <Link
                         href="/contact"
-                        prefetch
+                        prefetch="click"
                         class="btn btn-primary"
                         style="justify-content: center"
                         >📋 Send Enquiry</Link

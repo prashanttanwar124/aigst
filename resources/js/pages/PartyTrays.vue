@@ -380,7 +380,8 @@ onBeforeUnmount(() => {
                     <a href="https://wa.me/16474471046" target="_blank"
                         >WhatsApp</a
                     >, or use our
-                    <Link href="/contact" prefetch>contact form</Link>. We'll
+                    <Link href="/contact" prefetch="click">contact form</Link>.
+                    We'll
                     confirm your order and advise on quantities for your group
                     size.
                 </div>
@@ -393,10 +394,18 @@ onBeforeUnmount(() => {
                         flex-wrap: wrap;
                     "
                 >
-                    <Link href="/contact" prefetch class="btn btn-primary"
+                    <Link
+                        href="/contact"
+                        prefetch="click"
+                        class="btn btn-primary"
+                    >
                         >📋 Place a Party Tray Order</Link
                     >
-                    <Link href="/catering" prefetch class="btn btn-secondary"
+                    <Link
+                        href="/catering"
+                        prefetch="click"
+                        class="btn btn-secondary"
+                    >
                         >View Catering Packages →</Link
                     >
                 </div>

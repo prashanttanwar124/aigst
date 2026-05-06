@@ -5,6 +5,7 @@ use Inertia\Testing\AssertableInertia as Assert;
 it('renders public marketing pages for guests', function (string $routeName, string $component) {
     $this->get(route($routeName))
         ->assertOk()
+        ->assertHeaderContains('Cache-Control', 'max-age=300')
         ->assertInertia(fn (Assert $page) => $page
             ->component($component)
             ->has('seo', fn (Assert $seo) => $seo
