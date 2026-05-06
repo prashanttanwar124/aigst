@@ -43,7 +43,7 @@ class HandleInertiaRequests extends Middleware
                 'baseUrl' => rtrim(config('app.url'), '/'),
                 'defaultTitle' => 'Indian Grocery & Takeout',
                 'defaultDescription' => 'Authentic North Indian restaurant, grocery, catering, and party trays in Stratford, Ontario.',
-                'defaultImage' => '/apple-touch-icon.png',
+                'defaultImage' => '/indian_grocery_takeout.jpg',
                 'locale' => 'en_CA',
             ],
             'auth' => [

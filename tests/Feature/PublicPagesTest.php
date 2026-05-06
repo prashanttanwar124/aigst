@@ -10,9 +10,9 @@ it('renders public marketing pages for guests', function (string $routeName, str
             ->has('seo', fn (Assert $seo) => $seo
                 ->where('siteName', 'Indian Grocery & Takeout')
                 ->where('defaultTitle', 'Indian Grocery & Takeout')
+                ->where('defaultImage', '/indian_grocery_takeout.jpg')
                 ->has('baseUrl')
                 ->has('defaultDescription')
-                ->has('defaultImage')
                 ->has('locale')
                 ->etc()
             ));
