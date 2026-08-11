@@ -355,7 +355,7 @@ onBeforeUnmount(() => {
                             >519-305-3663</a
                         ><br />💬
                         <a
-                            href="https://wa.me/16474471046"
+                            href="https://wa.me/12262243038"
                             target="_blank"
                             style="color: var(--gold)"
                             >WhatsApp</a

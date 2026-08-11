@@ -377,7 +377,7 @@ onBeforeUnmount(() => {
                     <strong>How to Order Party Trays:</strong> Contact us at
                     least 24–48 hours in advance. Call us at
                     <a href="tel:15193053663">519-305-3663</a>, message us on
-                    <a href="https://wa.me/16474471046" target="_blank"
+                    <a href="https://wa.me/12262243038" target="_blank"
                         >WhatsApp</a
                     >, or use our
                     <Link href="/contact" prefetch="click">contact form</Link>.

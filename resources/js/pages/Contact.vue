@@ -170,8 +170,8 @@ onBeforeUnmount(() => {
                     <div>
                         <h4>WhatsApp</h4>
                         <p>
-                            <a href="https://wa.me/16474471046" target="_blank"
-                                >+1 (647) 447-1046</a
+                            <a href="https://wa.me/12262243038" target="_blank"
+                                >+1 (226) 224-3038</a
                             ><br />
                             <span
                                 style="

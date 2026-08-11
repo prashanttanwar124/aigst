@@ -401,7 +401,7 @@ onBeforeUnmount(() => {
                         >📞 519-305-3663</a
                     >
                     <a
-                        href="https://wa.me/16474471046"
+                        href="https://wa.me/12262243038"
                         target="_blank"
                         class="btn btn-green"
                         style="justify-content: center"

@@ -698,7 +698,7 @@ const sidebarCounts = computed(() => {
 
 function waOrder(name: string) {
     const msg = encodeURIComponent(`Hi! I'd like to order: ${name}`);
-    return `https://wa.me/16474471046?text=${msg}`;
+    return `https://wa.me/12262243038?text=${msg}`;
 }
 
 function scrollTop() {
@@ -1223,7 +1223,7 @@ onBeforeUnmount(() => {
         <div class="fab-stack" :class="{ expanded: fabOpen }">
             <div class="fab-actions">
                 <a
-                    href="https://wa.me/16474471046"
+                    href="https://wa.me/12262243038"
                     target="_blank"
                     class="fab-item"
                     @click="fabOpen = false"
