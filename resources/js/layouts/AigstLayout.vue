@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Link, router } from '@inertiajs/vue3';
+import { Link } from '@inertiajs/vue3';
 import { nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue';
 import { runMarketingMotion } from '@/lib/marketingMotion';
 import '../../css/aigst.css';
@@ -19,7 +19,6 @@ function closeDrawer() {
 }
 
 function prepareForVisit() {
-    router.cancelAll();
     closeDrawer();
 }
 watch(drawerOpen, (open) => {
